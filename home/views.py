@@ -4,4 +4,5 @@ from django.shortcuts import render
 
 def index(request):
     """ retruns the given request """
+    
     return render(request, 'index.html')

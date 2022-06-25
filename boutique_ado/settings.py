@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
 
-    # thrid party
+    # Other
     'crispy_forms',
 ]
 
@@ -79,16 +79,14 @@ TEMPLATES = [
                 'bag.contexts.bag_contents',
             ],
             'builtins': [
-                'crispy_forms.template.crispy_forms_tags',
-                'crispy_forms.template.crispy_forms_field',
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
             ]
         },
     },
 ]
 
-
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
-
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
